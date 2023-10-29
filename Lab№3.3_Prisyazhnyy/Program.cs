@@ -1,5 +1,6 @@
 ﻿//сборник задач/тема 3/подтема 3.3/вариант 22
-
+try
+{
 Console.Write("Введите число x: ");
 double x = double.Parse(Console.ReadLine());
 Console.Write("Введите количество повторений n: ");
@@ -25,26 +26,7 @@ for (int i = 1; i <= n; i++)
         denominatorAndDegree += 2;
 }
 Console.WriteLine($"Ответ: {sum:F2}");
-
-
-
-
-
-
-
-
-
-
-
-
-
-//for(int i = 0; i <= n; i++)
-//{
-//    for (int j = 1; j <= f; j++)
-//    {
-//        factorial *= j;
-//    }
-    
-//}
-//sum = (3/sum)*Math.Pow(x, degree);
-//Console.WriteLine(1-sum);
+catch (Exception ex)
+{
+Console.WriteLine(ex.Message);
+}
