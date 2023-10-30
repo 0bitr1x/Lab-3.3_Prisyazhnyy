@@ -26,6 +26,7 @@ for (int i = 1; i <= n; i++)
         denominatorAndDegree += 2;
 }
 Console.WriteLine($"Ответ: {sum:F2}");
+}
 catch (Exception ex)
 {
 Console.WriteLine(ex.Message);
